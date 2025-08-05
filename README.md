@@ -29,11 +29,5 @@ const App = () => {
 export default App;
 ```
 
-## Install tailwind dan baca dokumentasi
-```
-bun install tailwindcss @tailwindcss/vite
-```
-## Create global.css in src
-```
-@import "tailwindcss";
-```
+## Install tailwind v3 supaya tidak error dan baca dokumentasi
+https://v3.tailwindcss.com/docs/guides/vite
