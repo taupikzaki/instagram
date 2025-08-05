@@ -28,3 +28,12 @@ const App = () => {
 
 export default App;
 ```
+
+## Install tailwind dan baca dokumentasi
+```
+bun install tailwindcss @tailwindcss/vite
+```
+## Create global.css in src
+```
+@import "tailwindcss";
+```
