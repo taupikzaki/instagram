@@ -30,7 +30,7 @@ export default App;
 ```
 
 ## Install tailwind
-https://tailwindcss.com/docs/installation/framework-guides/nextjs  
+https://tailwindcss.com/docs/installation/using-vite  
 setelah itu import
 ```
 import "./globals.css";
