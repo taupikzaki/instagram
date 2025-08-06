@@ -31,3 +31,7 @@ export default App;
 
 ## Install tailwind v3 supaya tidak error dan baca dokumentasi
 https://v3.tailwindcss.com/docs/guides/vite
+setelah itu import
+```
+import "./globals.css";
+```
