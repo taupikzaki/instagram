@@ -4,7 +4,7 @@ Ini adalah tutorial membuat instagram di React JS
 
 ## Create Project
 ```
-bun create vite@4.4.1
+bun create vite@4.4.1 .
 ```
 ```
 bun install
