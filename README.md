@@ -4,10 +4,10 @@ Ini adalah tutorial membuat instagram di React JS
 
 ## Create Project
 ```
-bun create vite@4.4.1 .
+npm create vite@latest .
 ```
 ```
-bun install
+npm install
 ```
 ## Delete Src and create again
 
@@ -31,10 +31,6 @@ export default App;
 
 ## Install tailwind
 https://tailwindcss.com/docs/installation/using-vite  
-setelah itu import
-```
-import "./globals.css";
-```
 
 ## Di globals css isi berikut
 ```
@@ -102,4 +98,8 @@ import "./globals.css";
 ## Install
 ```
 bun add react-router-dom
+```
+## Install Shadcn
+```
+https://ui.shadcn.com/docs/installation/vite
 ```
