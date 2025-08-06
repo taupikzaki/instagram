@@ -11,8 +11,7 @@ npm install
 ```
 ## Install tailwind
 https://tailwindcss.com/docs/installation/using-vite  
-
-## Di globals css isi berikut
+Di globals css isi berikut
 ```
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
