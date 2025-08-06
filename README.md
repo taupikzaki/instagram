@@ -29,8 +29,8 @@ const App = () => {
 export default App;
 ```
 
-## Install tailwind v3 supaya tidak error dan baca dokumentasi
-https://v3.tailwindcss.com/docs/guides/vite
+## Install tailwind
+https://tailwindcss.com/docs/installation/framework-guides/nextjs
 setelah itu import
 ```
 import "./globals.css";
