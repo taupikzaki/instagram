@@ -24,3 +24,7 @@ npm install react-router-dom
 ```
 https://ui.shadcn.com/docs/installation/vite
 ```
+## Install appwrite
+```
+npm install appwrite
+```
