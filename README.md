@@ -1,3 +1,5 @@
+<h1 align="center">This text is centered</h1>
+
 # instagram
 Ini adalah tutorial membuat instagram di React JS
 
