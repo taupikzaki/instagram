@@ -1,32 +1,11 @@
-<h1 align="center">This text is centered</h1>
+<h1 align="center">Membuat Instagram Clone</h1>
 
-# instagram
-Ini adalah tutorial membuat instagram di React JS
+<h3 align="center">Instal React JS via Vite</h3>  
 
-
-## Create Project
 ```
 npm create vite@latest .
 ```
-```
-npm install
-```
-## Install tailwind
-https://tailwindcss.com/docs/installation/using-vite  
-Di globals css isi berikut
-```
-@import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
-```
-## Install
-```
-npm install react-router-dom
-```
-## Install Shadcn
-```
-https://ui.shadcn.com/docs/installation/vite
-```
-## Install appwrite
-```
-npm install appwrite
-```
+**Note:** Pilih framework React, pilih variant Typescript
+
+<h3 align="center">Install tailwind</h3>
+<a href="https://tailwindcss.com/docs/installation/using-vite" target="_blank">Tailwind</a>
