@@ -25,7 +25,7 @@ npm install react-router-dom
 npm install appwrite
 ```
 
-<h3 align="center">Main.tsx</h3>
+<h3 align="center">main.tsx</h3>
 src > main.tsx
 
 ```
@@ -39,3 +39,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   </BrowserRouter>
 );
 ```
+
+<h3 align="center">app.tsx</h3>
+src > app.tsx
