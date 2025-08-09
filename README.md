@@ -41,4 +41,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 ```
 
 <h3 align="center">app.tsx</h3>
-src > app.tsx
+
+- _auth
+
+src > _auth > AuthLayout.tsx  
+src > _auth > forms > SigninForm.tsx  
+src > _auth > forms > SignupForm.tsx  
+- _root
+
+src > _root > Rootlayout.tsx  
+src > _root > pages > Home.tsx  
+src > _root > pages > app.tsx  
+- app.tsx
