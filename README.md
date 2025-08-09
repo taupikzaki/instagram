@@ -112,6 +112,19 @@ export default Loader;
 
 Setting Appwrite
 
+create file **.env.local** di root
+```
+VITE_APPWRITE_PROJECT_ID="6896b57900099e1d6539"
+VITE_APPWRITE_URL="https://nyc.cloud.appwrite.io/v1"
+```
+buat file vite environment
+src > vite-env.d.ts
+```
+/// <reference types="vite/client"/>
+```
+
+src > lib > appwrite > config.ts
+
 ### src > _auth > forms > SigninForm.tsx  
 
 - _root
