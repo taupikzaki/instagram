@@ -51,5 +51,8 @@ src > _auth > forms > SignupForm.tsx
 
 src > _root > Rootlayout.tsx  
 src > _root > pages > Home.tsx  
-src > _root > pages > app.tsx  
+src > _root > pages > index.ts
+```
+export { default as Home } from "./Home";
+```
 - app.tsx
