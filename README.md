@@ -110,6 +110,8 @@ const Loader = () => {
 export default Loader;
 ```
 
+Setting Appwrite
+
 ### src > _auth > forms > SigninForm.tsx  
 
 - _root
