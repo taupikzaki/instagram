@@ -44,7 +44,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 
 - _auth
 
-src > _auth > AuthLayout.tsx  
+### src > _auth > AuthLayout.tsx
 
 ```
 import { Navigate, Outlet } from "react-router-dom";
@@ -68,8 +68,7 @@ const AuthLayout = () => {
 
 export default AuthLayout;
 ```
-src > _auth > forms > SigninForm.tsx  
-src > _auth > forms > SignupForm.tsx  
+### src > _auth > forms > SignupForm.tsx  
 install shadcn form component
 ```
 npx shadcn@latest add form
@@ -78,12 +77,23 @@ install shadcn input component
 ```
 npx shadcn@latest add input
 ```
+buat sign-up validation
+src > lib > validation > index.ts
+```
+import { z } from "zod";
+
+export const SignupValidation = z.object({
+  username: z.string().min(2).max(50),
+});
+```
+
+### src > _auth > forms > SigninForm.tsx  
 
 - _root
 
-src > _root > Rootlayout.tsx  
-src > _root > pages > Home.tsx  
-src > _root > pages > index.ts
+### src > _root > Rootlayout.tsx  
+### src > _root > pages > Home.tsx  
+### src > _root > pages > index.ts
 ```
 export { default as Home } from "./Home";
 ```
