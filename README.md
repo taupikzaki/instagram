@@ -45,8 +45,40 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 - _auth
 
 src > _auth > AuthLayout.tsx  
+
+```
+import { Navigate, Outlet } from "react-router-dom";
+
+const AuthLayout = () => {
+  const isAuthenticated = false;
+  return (
+    <>
+      {isAuthenticated ? (
+        <Navigate to="/" />
+      ) : (
+        <>
+          <section className="flex flex-1 justify-center items-center flex-col py-10">
+            <Outlet />
+          </section>
+        </>
+      )}
+    </>
+  );
+};
+
+export default AuthLayout;
+```
 src > _auth > forms > SigninForm.tsx  
 src > _auth > forms > SignupForm.tsx  
+install shadcn form component
+```
+npx shadcn@latest add form
+```
+install shadcn input component
+```
+npx shadcn@latest add input
+```
+
 - _root
 
 src > _root > Rootlayout.tsx  
