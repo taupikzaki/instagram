@@ -40,6 +40,46 @@ setelah terbuat klik setting lalu cari permission lalu klik tambah > pilih any >
 
 setelah terbuat klik setting lalu cari permission lalu klik tambah > pilih any > lalu centang semua > update
 
+Database > snapgram > posts > attributes > klik create attribute
+
+1. pilih relationship:
+- Two-way relationship
+- Related collection: users
+- Attribute key: creator
+- Attribute key (related collection): posts
+- Relation: many to one
+- On deleting a document: set Null
+
+2. pilih relationship:
+- Two-way relationship
+- Related collection: users
+- Attribute key: likes
+- Attribute key (related collection): liked
+- Relation: many to many
+- On deleting a document: set Null
+
+3. pilih string:
+- Attribute key: caption
+- size: 2200
+
+4. pilih string
+- Attribute key: tags
+- size: 2200
+- ceklis array
+
+5. pilih url
+- Attribute key: imageUrl
+- ceklis Required
+
+6. pilih string
+- Attribute key: imageId
+- size: 2200
+- ceklis required
+
+7. pilih string
+- Attribute key: location
+- size: 2200
+
 <h3 align="center">main.tsx</h3>
 src > main.tsx
 
