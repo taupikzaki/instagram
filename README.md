@@ -25,6 +25,21 @@ npm install react-router-dom
 npm install appwrite
 ```
 
+<img width="1263" height="581" alt="Screenshot 2025-08-10 080454" src="https://github.com/user-attachments/assets/576ff462-c12c-4d1a-b907-05ecb2572556" />
+
+<img width="1257" height="539" alt="Screenshot 2025-08-10 081804" src="https://github.com/user-attachments/assets/06729947-6c16-4719-a62f-2682dc1844c6" />
+
+Databases > snapgram
+- create collection lalu beri nama **posts**
+
+setelah terbuat klik setting lalu cari permission lalu klik tambah > pilih any > lalu centang semua > update
+- create collection lalu beri nama **users**
+
+setelah terbuat klik setting lalu cari permission lalu klik tambah > pilih any > lalu centang semua > update
+- create collection lalu beri nama **saves**
+
+setelah terbuat klik setting lalu cari permission lalu klik tambah > pilih any > lalu centang semua > update
+
 <h3 align="center">main.tsx</h3>
 src > main.tsx
 
@@ -116,6 +131,8 @@ create file **.env.local** di root
 ```
 VITE_APPWRITE_PROJECT_ID="6896b57900099e1d6539"
 VITE_APPWRITE_URL="https://nyc.cloud.appwrite.io/v1"
+VITE_APPWRITE_STORAGE_ID="6897eff70031f71ff8cf"
+VITE_APPWRITE_DATABASE_ID="6897f3010016b824d2be"
 ```
 buat file vite environment
 src > vite-env.d.ts
