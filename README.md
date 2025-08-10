@@ -124,6 +124,98 @@ src > vite-env.d.ts
 ```
 
 src > lib > appwrite > config.ts
+```
+import { Client, Account, Databases, Storage, Avatars } from "appwrite";
+
+export const appwriteconfig = {
+  projectId: import.meta.env.VITE_APPWRITE_PROJECT_ID,
+  url: import.meta.env.VITE_APPWRITE_URL,
+};
+
+export const client = new Client();
+
+client.setProject(appwriteconfig.projectId);
+client.setEndpoint(appwriteconfig.url);
+
+export const account = new Account(client);
+export const databases = new Databases(client);
+export const storage = new Storage(client);
+export const avatars = new Avatars(client);
+```
+
+src > types > index.ts
+```
+export type INavLink = {
+  imgURL: string;
+  route: string;
+  label: string;
+};
+
+export type IUpdateUser = {
+  userId: string;
+  name: string;
+  bio: string;
+  imageId: string;
+  imageUrl: URL | string;
+  file: File[];
+};
+
+export type INewPost = {
+  userId: string;
+  caption: string;
+  file: File[];
+  location?: string;
+  tags?: string;
+};
+
+export type IUpdatePost = {
+  postId: string;
+  caption: string;
+  imageId: string;
+  imageUrl: URL;
+  file: File[];
+  location?: string;
+  tags?: string;
+};
+
+export type IUser = {
+  id: string;
+  name: string;
+  username: string;
+  email: string;
+  imageUrl: string;
+  bio: string;
+};
+
+export type INewUser = {
+  name: string;
+  email: string;
+  username: string;
+  password: string;
+};
+```
+
+src > lib > appwrite > api.ts
+```
+import { ID } from "appwrite";
+import type { INewUser } from "@/types";
+import { account } from "./config";
+
+export async function createUserAccount(user: INewUser) {
+  try {
+    const newAccount = await account.create(
+      ID.unique(),
+      user.email,
+      user.password,
+      user.name
+    );
+    return newAccount;
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
+}
+```
 
 ### src > _auth > forms > SigninForm.tsx  
 
