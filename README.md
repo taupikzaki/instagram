@@ -321,7 +321,7 @@ src > lib > appwrite > api.ts
 ```
 import { ID } from "appwrite";
 import type { INewUser } from "@/types";
-import { account } from "./config";
+import { account, appwriteconfig, avatars, databases } from "./config";
 
 export async function createUserAccount(user: INewUser) {
   try {
@@ -331,12 +331,45 @@ export async function createUserAccount(user: INewUser) {
       user.password,
       user.name
     );
-    return newAccount;
+    if (!newAccount) throw Error;
+
+    const avatarUrl = avatars.getInitials(user.name);
+
+    const newUser = await saveUserToDB({
+      accountId: newAccount.$id,
+      name: newAccount.name,
+      email: newAccount.email,
+      username: user.username,
+      imageUrl: avatarUrl,
+    });
+
+    return newUser;
   } catch (error) {
     console.log(error);
     return error;
   }
 }
+
+export async function saveUserToDB(user: {
+  accountId: string;
+  email: string;
+  name: string;
+  imageUrl: URL;
+  username?: string;
+}) {
+  try {
+    const newUser = await databases.createDocument(
+      appwriteconfig.databaseId,
+      appwriteconfig.userCollectionId,
+      ID.unique(),
+      user
+    );
+    return newUser;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 ```
 
 ### src > _auth > forms > SigninForm.tsx  
