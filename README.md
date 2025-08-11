@@ -188,6 +188,11 @@ install shadcn input component
 ```
 npx shadcn@latest add input
 ```
+install shadcn sonner component
+```
+npx shadcn@latest add sonner
+```
+
 buat sign-up validation
 
 src > lib > validation > index.ts
