@@ -80,6 +80,62 @@ Database > snapgram > posts > attributes > klik create attribute
 - Attribute key: location
 - size: 2200
 
+Database > snapgram > posts > indexes > klik create index
+
+- Index Key: caption
+- Index type: full text
+- Attribute: caption
+- Order: desc
+
+Database > snapgram > users > attributes > klik create attribute
+
+1. pilih string
+- Attribute key: name
+- size: 2200
+
+2. pilih string
+- Attribute key: username
+- size: 2200
+
+3. pilih string
+- Attribute key: accountId
+- size: 2200
+- ceklis required
+
+4. pilih email
+- Attribute key: email
+- ceklis required
+
+5. pilih string
+- Attribute key: bio
+- size: 2200
+
+6. pilih string
+- Attribute key: imageId
+- size: 2200
+
+6. pilih url
+- Attribute key: imageUrl
+- ceklis required
+
+Database > snapgram > saves > attributes > klik create attribute
+
+1. pilih relationship:
+- Two-way relationship
+- Related collection: users
+- Attribute key: user
+- Attribute key (related collection): save
+- Relation: many to one
+- On deleting a document: set Null
+
+2. pilih relationship:
+- Two-way relationship
+- Related collection: posts
+- Attribute key: post
+- Attribute key (related collection): save
+- Relation: many to one
+- On deleting a document: set Null
+
 <h3 align="center">main.tsx</h3>
 src > main.tsx
 
